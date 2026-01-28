@@ -10,13 +10,13 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://picsum.photos/id/180/192/192",
+      "src": "https://picsum.photos/seed/tutorx/192/192",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://picsum.photos/id/180/512/512",
+      "src": "https://picsum.photos/seed/tutorx/512/512",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
@@ -24,7 +24,7 @@
   ],
   "screenshots": [
     {
-      "src": "https://picsum.photos/id/20/1080/1920",
+      "src": "https://picsum.photos/seed/tutorx/1080/1920",
       "sizes": "1080x1920",
       "type": "image/png",
       "form_factor": "narrow",

@@ -111,8 +111,12 @@ const LandingPage: React.FC<LandingPageProps> = ({
         <div className="fixed top-0 left-0 right-0 z-[100] animate-in slide-in-from-top duration-700">
           <div className="bg-indigo-600 dark:bg-indigo-900 px-4 py-3 sm:py-4 flex items-center justify-between text-white shadow-2xl border-b border-white/10">
             <div className="flex items-center gap-3">
-              <div className="hidden sm:flex w-10 h-10 bg-white/20 rounded-xl items-center justify-center animate-pulse">
-                <svg viewBox="0 0 64 64" className="w-6 h-6 fill-current"><path d="M18 18L46 46M46 18L18 46" stroke="currentColor" strokeWidth="8" strokeLinecap="round" /></svg>
+              {/* Unified Neural-X Install Banner Logo */}
+              <div className="hidden sm:flex w-10 h-10 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-xl items-center justify-center shadow-inner">
+                <svg viewBox="0 0 64 64" className="w-5 h-5 fill-white">
+                  <path d="M18 18L46 46" stroke="white" strokeWidth="8" strokeLinecap="round" />
+                  <path d="M46 18L18 46" stroke="white" strokeWidth="8" strokeLinecap="round" strokeOpacity="0.4" />
+                </svg>
               </div>
               <div className="flex flex-col">
                 <p className="text-[11px] sm:text-sm font-black uppercase tracking-tight leading-none">Initialize Mobile Link</p>

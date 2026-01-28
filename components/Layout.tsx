@@ -21,8 +21,8 @@ const Layout: React.FC<LayoutProps> = ({ children, userEmail, onLogout, onNaviga
             className="flex items-center space-x-3 cursor-pointer group"
             onClick={() => onNavigate?.('dashboard' as any)}
           >
-            {/* New Neural-X Logo */}
-            <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200 dark:shadow-none transform transition-all group-hover:rotate-12 group-hover:scale-110 active:scale-90">
+            {/* Standardized Neural-X Logo */}
+            <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-700 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200 dark:shadow-none transform transition-all group-hover:rotate-12 group-hover:scale-110 active:scale-90">
               <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
                 <path d="M18 18L46 46" stroke="white" strokeWidth="8" strokeLinecap="round" />
                 <path d="M46 18L18 46" stroke="white" strokeWidth="8" strokeLinecap="round" strokeOpacity="0.4" />

@@ -27,12 +27,14 @@ const Auth: React.FC<AuthProps> = ({ type, onAuth, onNavigate, loading, error })
     <div className="flex flex-col items-center mb-8 relative">
       <div className="relative group">
         <div className="absolute -inset-6 bg-gradient-to-tr from-indigo-500/20 via-purple-500/10 to-transparent rounded-full blur-3xl group-hover:from-indigo-500/30 transition-all duration-700"></div>
-        <div className="relative w-24 h-24 bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-2xl flex items-center justify-center border border-slate-100 dark:border-slate-800 transform transition-all duration-500 group-hover:rotate-3">
-          <svg viewBox="0 0 64 64" className="w-16 h-16 animate-float">
-            <path d="M18 18L46 46" stroke="#6366f1" strokeWidth="8" strokeLinecap="round" />
-            <path d="M46 18L18 46" stroke="#6366f1" strokeWidth="8" strokeLinecap="round" strokeOpacity="0.3" />
-            <circle cx="32" cy="32" r="6" fill="#6366f1" className="animate-pulse" />
-          </svg>
+        <div className="relative w-24 h-24 bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-2xl flex items-center justify-center border border-slate-100 dark:border-slate-800 transform transition-all duration-500 group-hover:rotate-3 overflow-hidden">
+          <div className="w-20 h-20 bg-gradient-to-br from-indigo-600 to-violet-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+            <svg viewBox="0 0 64 64" className="w-12 h-12">
+              <path d="M18 18L46 46" stroke="white" strokeWidth="8" strokeLinecap="round" />
+              <path d="M46 18L18 46" stroke="white" strokeWidth="8" strokeLinecap="round" strokeOpacity="0.4" />
+              <circle cx="32" cy="32" r="5" fill="white" className="animate-pulse" />
+            </svg>
+          </div>
         </div>
       </div>
       <div className="mt-5 flex items-center space-x-1">

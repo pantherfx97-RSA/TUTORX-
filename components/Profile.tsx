@@ -42,7 +42,6 @@ const Profile: React.FC<ProfileProps> = ({ user, onUpdateUser, onTriggerUpgrade 
         const base64 = (reader.result as string).split(',')[1];
         const analysis = await analyzeDocument(base64, file.type, user);
         
-        // Corrected variable declaration: removed extra space and keyword 'new' used as part of name
         const newDoc: DocumentAnalysis = {
           fileName: file.name,
           analysis,
@@ -276,7 +275,8 @@ const Profile: React.FC<ProfileProps> = ({ user, onUpdateUser, onTriggerUpgrade 
           
           <div className="p-5 bg-slate-50 dark:bg-slate-950 rounded-3xl border border-slate-100 dark:border-slate-800 space-y-4">
              <div className="flex items-center gap-3">
-               <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+               {/* Unified Neural-X Brand Icon */}
+               <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-700 rounded-xl flex items-center justify-center text-white shadow-lg overflow-hidden shrink-0">
                   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
                     <path d="M18 18L46 46" stroke="white" strokeWidth="8" strokeLinecap="round" />
                     <path d="M46 18L18 46" stroke="white" strokeWidth="8" strokeLinecap="round" strokeOpacity="0.4" />
